@@ -1,7 +1,7 @@
 {
-  "name": "@xixi-cli/template-vue",
+  "name": "@xixi-cli/templatevue",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.3",
   "type": "module",
   "publishConfig": {
     "access": "public"
