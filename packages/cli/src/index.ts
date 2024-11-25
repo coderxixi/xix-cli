@@ -19,7 +19,7 @@ program
 program.command('create')
   .description('创建项目')
   .action(async () => {
-    create();
+    // create();
   });
 
 program.parse();
