@@ -8,18 +8,15 @@ const pkgJson = fse.readJSONSync(path.join(import.meta.dirname, '../package.json
 
 const program = new Command();
 
-
-
-
 program
-  .name('guang-cli')
+  .name('xixi-cli')
   .description('脚手架 cli')
   .version(pkgJson.version);
 
 program.command('create')
   .description('创建项目')
   .action(async () => {
-    // create();
+    create();
   });
 
 program.parse();

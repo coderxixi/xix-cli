@@ -12,18 +12,18 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "xixi-ci": "./dist/index.js"
+    "xixi-cli": "./dist/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@xixi-cli/create": "workspace:^"
+    "@xixi-cli/create": "workspace:^",
+    "commander": "^12.1.0",
+    "fs-extra": "^11.2.0"
   },
   "devDependencies": {
     "@types/fs-extra": "^11.0.4",
-    "commander": "^12.1.0",
-    "extra": "^0.2.1",
     "fs": "0.0.1-security"
   }
 }
