@@ -1,0 +1,29 @@
+{
+  "name": "@xixi-cli/cli",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "xixi-ci": "./dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@xixi-cli/create": "workspace:^"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "commander": "^12.1.0",
+    "extra": "^0.2.1",
+    "fs": "0.0.1-security"
+  }
+}
