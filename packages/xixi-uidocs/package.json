@@ -1,0 +1,17 @@
+{
+  "name": "xixi-uidocs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@xixi-cli/xixi-ui": "workspace:^",
+    "vite": "^5.4.11",
+    "vue": "^3.5.13"
+  }
+}
