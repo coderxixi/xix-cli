@@ -1,5 +1,11 @@
 # @xixi-cli/cli
 
+## 2.0.0
+
+### Major Changes
+
+- 更新create 命令
+
 ## 1.0.0
 
 ### Major Changes
