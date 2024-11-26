@@ -1,5 +1,5 @@
 import { InlineConfig } from 'vite';
-import { VarletConfig, type VarletConfigHtmlInject } from './varlet.config.js';
+import { VarletConfig, type VarletConfigHtmlInject } from './xixi.config.js';
 export declare function getHtmlInject(inject: VarletConfigHtmlInject): {
     head: {
         start: any[];

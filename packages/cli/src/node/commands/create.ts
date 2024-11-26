@@ -5,7 +5,7 @@ import { pascalCase, camelize, kebabCase } from '@varlet/shared'
 import { input, confirm, select } from '@inquirer/prompts'
 import { resolve } from 'path'
 import { glob } from '../shared/fsUtils.js'
-import { getVarletConfig } from '../confing/varlet.config.js'
+import { getXixiConfig } from '../confing/xixi.config.js'
 import { SRC_DIR, dirname } from '../shared/constant.js'
 
 const { removeSync, readFileSync, copySync, pathExistsSync, writeFileSync, renameSync } = fse
@@ -33,7 +33,7 @@ async function renderTemplates(componentFolder: any, componentFolderName: any, r
 export async function create(options: any) {
   logger.title('\n📦📦 创建组件目录的名称 ! \n')
 
-  const { namespace } = await getVarletConfig()
+  const { namespace } = await getXixiConfig()
   const renderData: any = {
     namespace,
     bigCamelizeNamespace: pascalCase(namespace),
@@ -74,7 +74,7 @@ export async function create(options: any) {
   if (options.sfc || options.tsx) {
     renderData.style = options.sfc ? 'vue' : 'tsx'
   } else {
-    const style: CodingStyle = await select({
+    const style: any = await select({
       message: '你想要创建什么风格的组件模版 ?',
       choices: [
         { name: 'sfc', value: 'vue' },
@@ -111,5 +111,5 @@ export async function create(options: any) {
     removeSync(resolve(componentFolder, `${renderData.bigCamelizeName}.tsx`))
   }
 
-  logger.success(`Create ${componentFolderName} component success!`)
+  logger.success(`创建 ${componentFolderName} 组件成功!`)
 }

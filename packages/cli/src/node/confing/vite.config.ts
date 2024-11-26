@@ -13,7 +13,7 @@ import {
 import { markdown, html, inlineCss, copy } from '@varlet/vite-plugins'
 import { InlineConfig } from 'vite'
 import { resolve } from 'path'
-import { VarletConfig, type VarletConfigHtmlInject, type VarletConfigHtmlInjectPoint } from './varlet.config.js'
+import { VarletConfig, type VarletConfigHtmlInject, type VarletConfigHtmlInjectPoint } from './xixi.config.js'
 import vue from '@vitejs/plugin-vue'
 import jsx from '@vitejs/plugin-vue-jsx'
 
@@ -110,12 +110,12 @@ export function getBuildConfig(varletConfig: Required<VarletConfig>): InlineConf
       reportCompressedSize: false,
       emptyOutDir: true,
       cssTarget: 'chrome61',
-      rollupOptions: {
-        input: {
-          main: resolve(SITE_DIR, 'index.html'),
-          mobile: resolve(SITE_DIR, 'mobile.html'),
-        },
-      },
+      // rollupOptions: {
+      //   input: {
+      //     main: resolve(SITE_DIR, 'index.html'),
+      //     mobile: resolve(SITE_DIR, 'mobile.html'),
+      //   },
+      // },
     },
   }
 }

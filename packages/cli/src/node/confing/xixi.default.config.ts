@@ -1,32 +1,32 @@
-import { defineConfig } from './varlet.config.js'
+import { defineConfig } from './xixi.config.js'
 
 export default defineConfig({
-  name: 'Varlet',
-  namespace: 'var',
+  name: 'Xixi',
+  namespace: 'Xi',
   host: 'localhost',
   port: 8080,
-  title: 'VARLET',
-  logo: 'varlet_icon.png',
+  title: 'Xixi',
+  logo: 'Xixi_icon.png',
   defaultLanguage: 'zh-CN',
-  themeKey: 'VARLET_V3_THEME',
+  themeKey: 'Xixi_V3_THEME',
   defaultLightTheme: 'md3LightTheme',
   defaultDarkTheme: 'md3DarkTheme',
   useMobile: false,
-  _cf: ['pages.dev', 'varletjs.org'],
+  _cf: ['pages.dev', 'Xixijs.org'],
   analysis: { baidu: '' },
   pc: {
     title: {
-      'zh-CN': 'Varlet UI - Vue3 Material Design 组件库',
-      'en-US': 'Varlet UI - Vue3 Material Design Component Library',
+      'zh-CN': 'XIXIUI - Vue3 Material Design 组件库',
+      'en-US': 'XIXI UI - Vue3 Material Design Component Library',
     },
     menu: [],
     redirect: '/index',
     indexPage: {
       description: {
         'zh-CN':
-          'Varlet UI 是一个基于 Vue3 开发的 Material Design 组件库，全面拥抱 Vue3 生态，支持移动端和桌面端，由 varletjs 组织维护。支持 Typescript、按需引入、暗黑模式、主题定制、国际化，并提供 VSCode 插件保障良好的开发体验。',
+          'Xixi UI 是一个基于 Vue3 开发的 Material Design 组件库，全面拥抱 Vue3 生态，支持移动端和桌面端，由 Xixijs 组织维护。支持 Typescript、按需引入、暗黑模式、主题定制、国际化，并提供 VSCode 插件保障良好的开发体验。',
         'en-US':
-          'Varlet UI is a Material design component library developed based on Vue3, supporting mobile and desktop, developed and maintained by varletjs organization. Support Typescript, import on demand, dark mode, theme customization, internationalization, and provide VSCode plugin to ensure a good development experience.',
+          'Xixi UI is a Material design component library developed based on Vue3, supporting mobile and desktop, developed and maintained by Xixijs organization. Support Typescript, import on demand, dark mode, theme customization, internationalization, and provide VSCode plugin to ensure a good development experience.',
       },
       started: {
         'zh-CN': '快速开始',
@@ -146,8 +146,8 @@ export default defineConfig({
               'en-US': 'Open Source Developer',
             },
             description: {
-              'zh-CN': 'varletjs 核心团队成员',
-              'en-US': 'Core team member of varletjs',
+              'zh-CN': 'Xixijs 核心团队成员',
+              'en-US': 'Core team member of Xixijs',
             },
             avatar: 'https://avatars.githubusercontent.com/u/24223652',
             github: 'https://github.com/haoziqaq',
@@ -163,8 +163,8 @@ export default defineConfig({
               'en-US': 'Open Source Developer',
             },
             description: {
-              'zh-CN': 'varletjs 核心团队成员',
-              'en-US': 'Core team member of varletjs',
+              'zh-CN': 'Xixijs 核心团队成员',
+              'en-US': 'Core team member of Xixijs',
             },
             avatar: 'https://avatars.githubusercontent.com/u/34639100',
             github: 'https://github.com/BeADre',
@@ -179,8 +179,8 @@ export default defineConfig({
               'en-US': 'Open Source Developer',
             },
             description: {
-              'zh-CN': 'varletjs & ikun-ui 核心团队成员',
-              'en-US': 'Core team member of varletjs & ikun-ui',
+              'zh-CN': 'Xixijs & ikun-ui 核心团队成员',
+              'en-US': 'Core team member of Xixijs & ikun-ui',
             },
             avatar: 'https://avatars.githubusercontent.com/u/43628500',
             github: 'https://github.com/zhangmo8',
@@ -196,8 +196,8 @@ export default defineConfig({
               'en-US': 'Open Source Developer',
             },
             description: {
-              'zh-CN': 'varletjs 核心团队成员',
-              'en-US': 'Core team member of varletjs',
+              'zh-CN': 'Xixijs 核心团队成员',
+              'en-US': 'Core team member of Xixijs',
             },
             avatar: 'https://avatars.githubusercontent.com/u/70570907',
             github: 'https://github.com/chouchouji',
@@ -212,8 +212,8 @@ export default defineConfig({
               'en-US': 'Open Source Developer',
             },
             description: {
-              'zh-CN': 'varletjs 核心团队成员',
-              'en-US': 'Core team member of varletjs',
+              'zh-CN': 'Xixijs 核心团队成员',
+              'en-US': 'Core team member of Xixijs',
             },
             avatar: 'https://avatars.githubusercontent.com/u/49502875',
             github: 'https://github.com/tiny-dust',
@@ -228,8 +228,8 @@ export default defineConfig({
               'en-US': 'Open Source Developer',
             },
             description: {
-              'zh-CN': 'varletjs & apache & w3c & naiveui & ikun-ui 团队成员',
-              'en-US': 'Core team member of varletjs & apache & w3c & naiveui & ikun-ui',
+              'zh-CN': 'Xixijs & apache & w3c & naiveui & ikun-ui 团队成员',
+              'en-US': 'Core team member of Xixijs & apache & w3c & naiveui & ikun-ui',
             },
             avatar: 'https://avatars.githubusercontent.com/u/19239641',
             github: 'https://github.com/songjianet',
@@ -245,8 +245,8 @@ export default defineConfig({
               'en-US': 'Open Source Developer',
             },
             description: {
-              'zh-CN': 'varletjs & dcloud 团队成员',
-              'en-US': 'Core team member of varletjs & dcloud',
+              'zh-CN': 'Xixijs & dcloud 团队成员',
+              'en-US': 'Core team member of Xixijs & dcloud',
             },
             avatar: 'https://avatars.githubusercontent.com/u/37523000',
             github: 'https://github.com/zhenyuWang',
@@ -261,8 +261,8 @@ export default defineConfig({
               'en-US': 'Open Source Developer',
             },
             description: {
-              'zh-CN': 'varletjs 团队成员',
-              'en-US': 'Core team member of varletjs',
+              'zh-CN': 'Xixijs 团队成员',
+              'en-US': 'Core team member of Xixijs',
             },
             avatar: 'https://avatars.githubusercontent.com/u/39668309',
             github: 'https://github.com/qytayh',
@@ -277,8 +277,8 @@ export default defineConfig({
               'en-US': 'Open Source Developer',
             },
             description: {
-              'zh-CN': 'varletjs & unplugin & farm & devui & wujie 团队成员',
-              'en-US': 'Core team member of varletjs & unplugin & farm & devui & wujie',
+              'zh-CN': 'Xixijs & unplugin & farm & devui & wujie 团队成员',
+              'en-US': 'Core team member of Xixijs & unplugin & farm & devui & wujie',
             },
             avatar: 'https://avatars.githubusercontent.com/u/66500121',
             github: 'https://github.com/ErKeLost',
@@ -293,8 +293,8 @@ export default defineConfig({
               'en-US': 'Open Source Developer',
             },
             description: {
-              'zh-CN': 'varletjs 团队成员',
-              'en-US': 'Core team member of varletjs',
+              'zh-CN': 'Xixijs 团队成员',
+              'en-US': 'Core team member of Xixijs',
             },
             avatar: 'https://avatars.githubusercontent.com/u/85718018',
             github: 'https://github.com/wangKBweb',
@@ -309,8 +309,8 @@ export default defineConfig({
               'en-US': 'Open Source Developer & Bilibili UP',
             },
             description: {
-              'zh-CN': 'varletjs 团队成员',
-              'en-US': 'Core team member of varletjs',
+              'zh-CN': 'Xixijs 团队成员',
+              'en-US': 'Core team member of Xixijs',
             },
             avatar: 'https://avatars.githubusercontent.com/u/75017711',
             github: 'https://github.com/ayangweb',
@@ -325,8 +325,8 @@ export default defineConfig({
               'en-US': 'Open Source Developer',
             },
             description: {
-              'zh-CN': 'varletjs 团队成员',
-              'en-US': 'Core team member of varletjs',
+              'zh-CN': 'Xixijs 团队成员',
+              'en-US': 'Core team member of Xixijs',
             },
             avatar: 'https://avatars.githubusercontent.com/u/42862411',
             github: 'https://github.com/jiechen66',
@@ -341,8 +341,8 @@ export default defineConfig({
               'en-US': 'Open Source Developer',
             },
             description: {
-              'zh-CN': 'varletjs 团队成员',
-              'en-US': 'Core team member of varletjs',
+              'zh-CN': 'Xixijs 团队成员',
+              'en-US': 'Core team member of Xixijs',
             },
             avatar: 'https://avatars.githubusercontent.com/u/49914353',
             github: 'https://github.com/dyggod',
@@ -357,8 +357,8 @@ export default defineConfig({
               'en-US': 'Open Source Developer',
             },
             description: {
-              'zh-CN': 'varletjs 团队成员',
-              'en-US': 'Core team member of varletjs',
+              'zh-CN': 'Xixijs 团队成员',
+              'en-US': 'Core team member of Xixijs',
             },
             avatar: 'https://avatars.githubusercontent.com/u/37403253',
             github: 'https://github.com/a145789',
@@ -373,8 +373,8 @@ export default defineConfig({
               'en-US': 'Open Source Developer',
             },
             description: {
-              'zh-CN': 'varletjs 团队成员',
-              'en-US': 'Core team member of varletjs',
+              'zh-CN': 'Xixijs 团队成员',
+              'en-US': 'Core team member of Xixijs',
             },
             avatar: 'https://avatars.githubusercontent.com/u/7401170',
             github: 'https://github.com/gaoting',
@@ -386,24 +386,24 @@ export default defineConfig({
           'zh-CN': '贡献者',
           'en-US': 'Contributors',
         },
-        link: 'https://github.com/varletjs/varlet/graphs/contributors',
-        image: 'https://contrib.rocks/image?repo=varletjs/varlet',
+        link: 'https://github.com/Xixijs/Xixi/graphs/contributors',
+        image: 'https://contrib.rocks/image?repo=Xixijs/Xixi',
       },
       sponsors: {
         label: {
           'zh-CN': '赞助者',
           'en-US': 'Sponsors',
         },
-        link: 'https://cdn.jsdelivr.net/gh/varletjs/varlet-static/sponsorkit/sponsors.svg',
-        image: 'https://cdn.jsdelivr.net/gh/varletjs/varlet-static/sponsorkit/sponsors.svg',
+        link: 'https://cdn.jsdelivr.net/gh/Xixijs/Xixi-static/sponsorkit/sponsors.svg',
+        image: 'https://cdn.jsdelivr.net/gh/Xixijs/Xixi-static/sponsorkit/sponsors.svg',
       },
       license: {
         'zh-CN': '组件库基于 MIT 协议，您可以自由的使用和分享',
         'en-US': 'Released under the MIT License, You can use and share freely.',
       },
       copyright: {
-        'zh-CN': 'Copyright © 2022 varletjs 组织成员以及 varlet 的贡献者们',
-        'en-US': 'Copyright © 2022 varletjs member and varlet contributors.',
+        'zh-CN': 'Copyright © 2022 Xixijs 组织成员以及 Xixi 的贡献者们',
+        'en-US': 'Copyright © 2022 Xixijs member and Xixi contributors.',
       },
     },
     header: {
@@ -414,48 +414,48 @@ export default defineConfig({
       currentVersion: 'v3.x',
       versions: [
         {
-          name: 'varletjs.org',
+          name: 'Xixijs.org',
           items: [
             {
               label: 'v3.x',
-              link: 'https://varletjs.org',
+              link: 'https://Xixijs.org',
             },
             {
               label: 'v2.x',
-              link: 'https://varletjs.org/v2',
+              link: 'https://Xixijs.org/v2',
             },
           ],
         },
         {
-          name: 'varlet.pages.dev',
+          name: 'Xixi.pages.dev',
           items: [
             {
               label: 'v3.x',
-              link: 'https://varlet.pages.dev',
+              link: 'https://Xixi.pages.dev',
             },
             {
               label: 'v2.x',
-              link: 'https://varlet.pages.dev/v2',
+              link: 'https://Xixi.pages.dev/v2',
             },
           ],
         },
         {
-          name: 'varletjs.vercel.app',
+          name: 'Xixijs.vercel.app',
           items: [
             {
               label: 'v3.x',
-              link: 'https://varlet-varletjs.vercel.app',
+              link: 'https://Xixi-Xixijs.vercel.app',
             },
             {
               label: 'v2.x',
-              link: 'https://varlet-git-v2x-varletjs.vercel.app',
+              link: 'https://Xixi-git-v2x-Xixijs.vercel.app',
             },
           ],
         },
       ],
-      github: 'https://github.com/varletjs/varlet',
-      changelog: 'https://github.com/varletjs/varlet/blob/main/CHANGELOG.md',
-      playground: 'https://varletjs.org/playground',
+      github: 'https://github.com/Xixijs/Xixi',
+      changelog: 'https://github.com/Xixijs/Xixi/blob/main/CHANGELOG.md',
+      playground: 'https://Xixijs.org/playground',
       themes: [
         { 'zh-CN': 'Md2 亮色', 'en-US': 'Md2 Light', value: 'lightTheme' },
         { 'zh-CN': 'Md2 暗色', 'en-US': 'Md2 Dark', value: 'darkTheme' },
@@ -478,8 +478,8 @@ export default defineConfig({
   },
   mobile: {
     title: {
-      'zh-CN': 'Varlet UI - Vue3 Material Design 组件库',
-      'en-US': 'Varlet UI - Vue3 Material Design Component Library',
+      'zh-CN': 'Xixi UI - Vue3 Material Design 组件库',
+      'en-US': 'Xixi UI - Vue3 Material Design Component Library',
     },
     redirect: '/home',
     header: {
@@ -487,7 +487,7 @@ export default defineConfig({
         'zh-CN': '中文',
         'en-US': 'English',
       },
-      github: 'https://github.com/varletjs/varlet',
+      github: 'https://github.com/Xixijs/Xixi',
       themes: [
         { 'zh-CN': 'Md2 亮色', 'en-US': 'Md2 Light', value: 'lightTheme' },
         { 'zh-CN': 'Md2 暗色', 'en-US': 'Md2 Dark', value: 'darkTheme' },
@@ -501,14 +501,14 @@ export default defineConfig({
     },
   },
   seo: {
-    title: 'Varlet UI - Vue3 Material Design Component Library',
+    title: 'Xixi UI - Vue3 Material Design Component Library',
     description:
-      'Varlet UI is a Material design component library developed based on Vue3, supporting mobile and desktop, developed and maintained by varletjs organization. Support Typescript, import on demand, dark mode, theme customization, internationalization, and provide VSCode plugin to ensure a good development experience.',
+      'Xixi UI is a Material design component library developed based on Vue3, supporting mobile and desktop, developed and maintained by Xixijs organization. Support Typescript, import on demand, dark mode, theme customization, internationalization, and provide VSCode plugin to ensure a good development experience.',
     keywords: [
-      'Varlet',
-      'Varlet UI',
-      'varlet',
-      'varlet-ui',
+      'Xixi',
+      'Xixi UI',
+      'Xixi',
+      'Xixi-ui',
       'UI',
       'Vue3 Mobile Components Library',
       'Material Design 2',
@@ -732,7 +732,7 @@ export default defineConfig({
     'color-hl-group-i': '#EFB8C8',
   },
   icons: {
-    name: 'varlet-icons',
+    name: 'Xixi-icons',
     namespace: 'var-icon',
     fontStyle: 'normal',
     fontWeight: 'normal',

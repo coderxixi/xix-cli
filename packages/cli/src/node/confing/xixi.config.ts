@@ -201,8 +201,8 @@ export function mergeStrategy(_: any, srcValue: any, key: any) {
   }
 }
 
-export async function getVarletConfig(emit = false): Promise<Required<VarletConfig>> {
-  const defaultConfig = (await import('./varlet.default.config.js')).default
+export async function getXixiConfig(emit = false): Promise<Required<VarletConfig>> {
+  const defaultConfig = (await import('./xixi.default.config.js')).default
   const config: any = pathExistsSync(VARLET_CONFIG)
     ? (await import(`${pathToFileURL(VARLET_CONFIG).href}?_t=${statSync(VARLET_CONFIG).mtimeMs}`)).default
     : {}

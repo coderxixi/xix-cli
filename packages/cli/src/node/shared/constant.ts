@@ -4,7 +4,7 @@ import { getDirname } from './fsUtils.js'
 export const dirname = getDirname(import.meta.url)
 
 export const CWD = process.cwd();
-export const VARLET_CONFIG = resolve(CWD, 'varlet.config.mjs')
+export const VARLET_CONFIG = resolve(CWD, 'xixi.config.mjs')
 export const VITEST_CONFIG = resolve(dirname, '../config/vitest.config.js')
 export const SRC = 'src'
 export const SRC_DIR = resolve(CWD, SRC)
@@ -24,20 +24,20 @@ export const EXAMPLE_DIR_NAME = 'example'
 export const LOCALE_DIR_NAME = 'locale'
 export const DOCS_DIR_NAME = 'docs'
 export const TESTS_DIR_NAME = '__tests__'
-export const GENERATORS_DIR = resolve(dirname, '../../../template/generators')
+export const GENERATORS_DIR = resolve(dirname, '../../template/generators')
 export const UI_PACKAGE_JSON = resolve(CWD, 'package.json')
-export const CLI_PACKAGE_JSON = resolve(dirname, '../../../package.json')
+export const CLI_PACKAGE_JSON = resolve(dirname, '../../package.json')
 export const CHECKLIST_FILE = resolve(CWD, 'CHECKLIST.md')
 
 // site
 export const SITE = resolve(dirname, '../../../site')
 export const SITE_OUTPUT_PATH = resolve(CWD, 'site')
 export const SITE_PUBLIC_PATH = resolve(CWD, 'public')
-export const SITE_DIR = resolve(CWD, '.varlet/site')
-export const SITE_PC_DIR = resolve(CWD, '.varlet/site/pc')
-export const SITE_PC_ROUTES = resolve(CWD, '.varlet/pc.routes.ts')
-export const SITE_MOBILE_ROUTES = resolve(CWD, '.varlet/mobile.routes.ts')
-export const SITE_CONFIG = resolve(CWD, '.varlet/site.config.json')
+export const SITE_DIR = resolve(CWD, '.xixi/site')
+export const SITE_PC_DIR = resolve(CWD, '.xixi/site/pc')
+export const SITE_PC_ROUTES = resolve(CWD, '.xixi/pc.routes.ts')
+export const SITE_MOBILE_ROUTES = resolve(CWD, '.xixi/mobile.routes.ts')
+export const SITE_CONFIG = resolve(CWD, '.xixi/site.config.json')
 
 // template highlight
 export const HL_DIR = resolve(CWD, 'highlight')

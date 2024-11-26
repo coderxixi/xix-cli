@@ -5,7 +5,7 @@ import { pascalCase, camelize, kebabCase } from '@varlet/shared';
 import { input, confirm, select } from '@inquirer/prompts';
 import { resolve } from 'path';
 import { glob } from '../shared/fsUtils.js';
-import { getVarletConfig } from '../confing/varlet.config.js';
+import { getXixiConfig } from '../confing/xixi.config.js';
 import { SRC_DIR, dirname } from '../shared/constant.js';
 const { removeSync, readFileSync, copySync, pathExistsSync, writeFileSync, renameSync } = fse;
 async function renderTemplates(componentFolder, componentFolderName, renderData) {
@@ -23,7 +23,7 @@ async function renderTemplates(componentFolder, componentFolderName, renderData)
 }
 export async function create(options) {
     logger.title('\n📦📦 创建组件目录的名称 ! \n');
-    const { namespace } = await getVarletConfig();
+    const { namespace } = await getXixiConfig();
     const renderData = {
         namespace,
         bigCamelizeNamespace: pascalCase(namespace),
@@ -87,5 +87,5 @@ export async function create(options) {
     if (renderData.style !== 'tsx') {
         removeSync(resolve(componentFolder, `${renderData.bigCamelizeName}.tsx`));
     }
-    logger.success(`Create ${componentFolderName} component success!`);
+    logger.success(`创建 ${componentFolderName} 组件成功!`);
 }

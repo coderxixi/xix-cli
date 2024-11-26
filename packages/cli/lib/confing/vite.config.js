@@ -76,12 +76,12 @@ export function getBuildConfig(varletConfig) {
             reportCompressedSize: false,
             emptyOutDir: true,
             cssTarget: 'chrome61',
-            rollupOptions: {
-                input: {
-                    main: resolve(SITE_DIR, 'index.html'),
-                    mobile: resolve(SITE_DIR, 'mobile.html'),
-                },
-            },
+            // rollupOptions: {
+            //   input: {
+            //     main: resolve(SITE_DIR, 'index.html'),
+            //     mobile: resolve(SITE_DIR, 'mobile.html'),
+            //   },
+            // },
         },
     };
 }
