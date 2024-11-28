@@ -4,7 +4,6 @@ import { getCliVersion } from './shared/fsUtils.js'
 const program = new Command();
 // program.version(`xixi-cli ${getCliVersion()}`).usage('<command> [options]');
 //创建组件命令
-
 program
      .command('create')
      .description('创建组件目录')
@@ -22,7 +21,7 @@ program
       
   })
 
-
+//打包组件库文档
 
 program
   .command('build')
@@ -33,7 +32,7 @@ program
   })
 
 
-
+//生成组件库的模版
 
 program
   .command('gen')
@@ -47,6 +46,19 @@ program
 
     return gen(options)
   })
+
+
+
+//构建组件库
+program
+  .command('compile')
+  .description('Compile varlet components library code')
+  .action(async () => {
+    const { compile } = await import('./commands/compile.js')
+
+    return compile()
+  })
+
 
 //解析模版命令
 program.parse()

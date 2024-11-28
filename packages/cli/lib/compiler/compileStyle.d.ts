@@ -1,0 +1,14 @@
+export declare const EMPTY_SPACE_RE: RegExp;
+export declare const EMPTY_LINE_RE: RegExp;
+export declare const IMPORT_CSS_RE: RegExp;
+export declare const IMPORT_LESS_RE: RegExp;
+export declare const IMPORT_SCSS_RE: RegExp;
+export declare const STYLE_EXTNAME_RE: RegExp;
+export declare const STYLE_IMPORT_RE: RegExp;
+export declare const compressCss: (s: string) => string;
+export declare function normalizeStyleDependency(styleImport: string, reg: RegExp): string;
+export declare function extractStyleDependencies(file: string, code: string, styleReg: RegExp): string;
+export declare function compileLess(file: string): Promise<void>;
+export declare function compileScss(file: string): void;
+export declare function clearLessFiles(dir: string): void;
+export declare function clearScssFiles(dir: string): void;

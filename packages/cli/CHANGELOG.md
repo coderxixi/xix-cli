@@ -1,5 +1,11 @@
 # @xixi-cli/cli
 
+## 3.0.0
+
+### Major Changes
+
+- 生成模版
+
 ## 4.0.0
 
 ### Major Changes

@@ -1,0 +1,1 @@
+import{_ as o,a as t,o as e}from"./index-DsLLHNOG.js";import"@varlet/cli/client";import"lodash-es";import"@varlet/touch-emulator";const s={components:{}},c={class:"varlet-site-doc"};function r(n,a,p,_,i,m){return e(),t("div",c)}const $=o(s,[["render",r]]);export{$ as default};

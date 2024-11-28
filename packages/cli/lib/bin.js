@@ -17,6 +17,7 @@ program
     return create(options);
     console.log('options', options);
 });
+//打包组件库文档
 program
     .command('build')
     .description('Build varlet site for production')
@@ -24,6 +25,7 @@ program
     const { build } = await import('./commands/build.js');
     return build();
 });
+//生成组件库的模版
 program
     .command('gen')
     .description('Generate cli application')
@@ -34,6 +36,14 @@ program
     .action(async (options) => {
     const { gen } = await import('./commands/gen.js');
     return gen(options);
+});
+//构建组件库
+program
+    .command('compile')
+    .description('Compile varlet components library code')
+    .action(async () => {
+    const { compile } = await import('./commands/compile.js');
+    return compile();
 });
 //解析模版命令
 program.parse();

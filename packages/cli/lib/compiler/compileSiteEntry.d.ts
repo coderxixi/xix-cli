@@ -1,0 +1,18 @@
+export declare function getExampleRoutePath(examplePath: string): string;
+export declare function getComponentDocRoutePath(componentDocsPath: string): string;
+export declare function getRootDocRoutePath(rootDocsPath: string): string;
+export declare function getPageRoutePath(rootLocalePath: string): string;
+export declare function getPageFilePath(rootLocalePath: string): string;
+export declare function isDraftExample(example: string): boolean;
+export declare function hasDraftExample(examples: string[], example: string): boolean;
+export declare function isDraftDoc(doc: string): boolean;
+export declare function hasDraftDoc(docs: string[], doc: string): boolean;
+export declare function findExamples(draftMode: boolean): Promise<string[]>;
+export declare function filterDraftDocs(docs: string[], draftMode: boolean): string[];
+export declare function findComponentDocs(draftMode: boolean): Promise<string[]>;
+export declare function findRootDocs(draftMode: boolean): Promise<string[]>;
+export declare function findPageLocales(): Promise<string[]>;
+export declare function buildMobileSiteRoutes(draftMode: boolean): Promise<void>;
+export declare function buildPcSiteRoutes(draftMode: boolean): Promise<void>;
+export declare function buildSiteSource(): Promise<void>;
+export declare function buildSiteEntry(draftMode: boolean): Promise<void>;

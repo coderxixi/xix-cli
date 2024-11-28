@@ -97,8 +97,9 @@ export function getDevConfig(varletConfig: Required<VarletConfig>): InlineConfig
   }
 }
 
-export function getBuildConfig(varletConfig: Required<VarletConfig>): InlineConfig {
+export function getBuildConfig(varletConfig:any): any {
   const devConfig = getDevConfig(varletConfig)
+ 
 
   return {
     ...devConfig,
@@ -110,12 +111,14 @@ export function getBuildConfig(varletConfig: Required<VarletConfig>): InlineConf
       reportCompressedSize: false,
       emptyOutDir: true,
       cssTarget: 'chrome61',
-      // rollupOptions: {
-      //   input: {
-      //     main: resolve(SITE_DIR, 'index.html'),
-      //     mobile: resolve(SITE_DIR, 'mobile.html'),
-      //   },
-      // },
+      rollupOptions: {
+      
+        external: ['lodash-es', '@varlet/touch-emulator', '@varlet/cli/client', '@varlet/touch-emulator','less'],
+        // input: {
+        //   main: resolve(SITE_DIR, 'index.html'),
+        //   mobile: resolve(SITE_DIR, 'mobile.html'),
+        // },
+      },
     },
   }
 }
@@ -128,11 +131,12 @@ export interface BundleBuildOptions {
   emptyOutDir: boolean
 }
 
-export function getBundleConfig(varletConfig: Required<VarletConfig>, buildOptions: BundleBuildOptions): InlineConfig {
+export function getBundleConfig(varletConfig:any, buildOptions:any): any {
   const plugins = []
   const name = varletConfig?.name
   const { external = [], globals = {} } = varletConfig?.bundle || {}
   const { fileName, output, format, emptyOutDir, removeEnv } = buildOptions
+  console.log('external', external);
 
   if (format === 'umd') {
     plugins.push(
@@ -181,7 +185,7 @@ export function getBundleConfig(varletConfig: Required<VarletConfig>, buildOptio
 
 export type ExtensionMode = 'dev' | 'build'
 
-export function getExtensionConfig(mode: ExtensionMode): InlineConfig {
+export function getExtensionConfig(mode: any): any {
   return {
     build: {
       sourcemap: mode === 'dev' ? 'inline' : false,

@@ -76,12 +76,13 @@ export function getBuildConfig(varletConfig) {
             reportCompressedSize: false,
             emptyOutDir: true,
             cssTarget: 'chrome61',
-            // rollupOptions: {
-            //   input: {
-            //     main: resolve(SITE_DIR, 'index.html'),
-            //     mobile: resolve(SITE_DIR, 'mobile.html'),
-            //   },
-            // },
+            rollupOptions: {
+                external: ['lodash-es', '@varlet/touch-emulator', '@varlet/cli/client', '@varlet/touch-emulator', 'less'],
+                // input: {
+                //   main: resolve(SITE_DIR, 'index.html'),
+                //   mobile: resolve(SITE_DIR, 'mobile.html'),
+                // },
+            },
         },
     };
 }
@@ -90,6 +91,7 @@ export function getBundleConfig(varletConfig, buildOptions) {
     const name = varletConfig?.name;
     const { external = [], globals = {} } = varletConfig?.bundle || {};
     const { fileName, output, format, emptyOutDir, removeEnv } = buildOptions;
+    console.log('external', external);
     if (format === 'umd') {
         plugins.push(inlineCss({
             jsFile: resolve(output, fileName),

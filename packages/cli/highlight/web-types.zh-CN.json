@@ -1,0 +1,12 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JetBrains/web-types/master/schema/web-types.json",
+  "framework": "vue",
+  "version": "3.0.0",
+  "name": "Xixi",
+  "contributions": {
+    "html": {
+      "tags": [],
+      "types-syntax": "typescript"
+    }
+  }
+}

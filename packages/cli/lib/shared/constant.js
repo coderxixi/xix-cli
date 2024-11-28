@@ -26,7 +26,7 @@ export const UI_PACKAGE_JSON = resolve(CWD, 'package.json');
 export const CLI_PACKAGE_JSON = resolve(dirname, '../../package.json');
 export const CHECKLIST_FILE = resolve(CWD, 'CHECKLIST.md');
 // site
-export const SITE = resolve(dirname, '../../../site');
+export const SITE = resolve(dirname, '../../site');
 export const SITE_OUTPUT_PATH = resolve(CWD, 'site');
 export const SITE_PUBLIC_PATH = resolve(CWD, 'public');
 export const SITE_DIR = resolve(CWD, '.xixi/site');

@@ -13,7 +13,7 @@ export declare function getHtmlInject(inject: VarletConfigHtmlInject): {
     };
 };
 export declare function getDevConfig(varletConfig: Required<VarletConfig>): InlineConfig;
-export declare function getBuildConfig(varletConfig: Required<VarletConfig>): InlineConfig;
+export declare function getBuildConfig(varletConfig: any): any;
 export interface BundleBuildOptions {
     fileName: string;
     output: string;
@@ -21,6 +21,6 @@ export interface BundleBuildOptions {
     removeEnv: boolean;
     emptyOutDir: boolean;
 }
-export declare function getBundleConfig(varletConfig: Required<VarletConfig>, buildOptions: BundleBuildOptions): InlineConfig;
+export declare function getBundleConfig(varletConfig: any, buildOptions: any): any;
 export type ExtensionMode = 'dev' | 'build';
-export declare function getExtensionConfig(mode: ExtensionMode): InlineConfig;
+export declare function getExtensionConfig(mode: any): any;

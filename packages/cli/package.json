@@ -1,6 +1,6 @@
 {
   "name": "@xixi-cli/cli",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "",
   "type": "module",
   "main": "./lib/index.js",
@@ -12,15 +12,22 @@
     "dev": "tsc --watch"
   },
   "bin": {
-    "xixi-cli": "./lib/bin.js"
+    "xixi-cli":"./lib/bin.js"
   },
   "keywords": [
     "cli",
     "xixi"
   ],
+   "files": [
+     "lib",
+     "template",
+     "site",
+     "tsconfig.json"
+   ],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/core": "^7.26.0",
     "@inquirer/prompts": "6.0.1",
     "@varlet/icon-builder": "^0.5.1",
     "@varlet/shared": "^3.7.0",
@@ -36,18 +43,28 @@
     "esbuild": "^0.24.0",
     "fs-extra": "9.0.1",
     "glob": "7.2.0",
+    "hash-sum": "^2.0.0",
+    "less": "^4.2.1",
     "markdown-it": "^14.1.0",
+    "nanospinner": "^1.2.0",
     "picocolors": "^1.1.1",
+    "sass": "^1.81.0",
     "typescript": "^5.7.2",
     "vite": "^5.4.11",
     "vitest": "^2.1.5",
     "vue": "^3.5.13"
   },
   "devDependencies": {
+    "@types/babel__core": "^7.20.5",
     "@types/ejs": "^3.1.5",
     "@types/fs-extra": "^11.0.4",
     "@types/glob": "^8.1.0",
+    "@types/hash-sum": "^1.0.2",
+    "@types/less": "^3.0.7",
     "@types/node": "^22.9.4",
-    "fs": "0.0.1-security"
+    "clipboard": "^2.0.11",
+    "fs": "0.0.1-security",
+    "jsdom": "^25.0.1",
+    "vue-router": "^4.5.0"
   }
 }
