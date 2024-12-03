@@ -1,6 +1,6 @@
 {
   "name": "@xixi-cli/cli",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "",
   "type": "module",
   "main": "./lib/index.js",
@@ -12,18 +12,18 @@
     "dev": "tsc --watch"
   },
   "bin": {
-    "xixi-cli":"./lib/bin.js"
+    "xixi-cli": "./lib/bin.js"
   },
   "keywords": [
     "cli",
     "xixi"
   ],
-   "files": [
-     "lib",
-     "template",
-     "site",
-     "tsconfig.json"
-   ],
+  "files": [
+    "lib",
+    "template",
+    "site",
+    "tsconfig.json"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
